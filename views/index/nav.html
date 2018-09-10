@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <title>今日头条</title>
+    <link rel="stylesheet" href="/assets/index/css/rem.css">
+    <link rel="stylesheet" href="/assets/index/css/nav.css">
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<body>
+<!--页头-->
+<div class="top">
+    <div class="top-abs">
+        <div class="top-email">
+            <a href="/index.php?c=page&m=index"></a>
+        </div>
+        <div class="top-title">
+            频道管理
+        </div>
+        <div class="top-search"></div>
+    </div>
+</div>
+<!--删除选项-->
+<div class="box del-box">
+    <span class="title">点击删除以下频道</span>
+    <ul class="content">
+        <li class="list-in">推荐</li>
+        <?php foreach ($category as $k=>$v) {?>
+        <li class="list" data-id="<?php echo $v['id']?>">
+        <?php echo $v['name'] ?>
+        </li>
+        <?php } ?>
+        <!--<li class="list">理由</li>-->
+        <!--<li class="list">历史</li>-->
+        <!--<li class="list">探索</li>-->
+        <!--<li class="list">社会</li>-->
+        <!--<li class="list">游戏</li>-->
+    </ul>
+</div>
+<!--增加选项-->
+<div class="box add-box">
+    <span class="title">点击添加以下频道</span>
+    <ul class="content">
+        <?php foreach ($categorys as $k=>$v) {?>
+        <li class="list" data-id="<?php echo $v['id']?>">
+            <?php echo $v['name'] ?>
+        </li>
+        <?php } ?>
+        <!--<li class="list">推荐</li>-->
+        <!--<li class="list">理由</li>-->
+        <!--<li class="list">历史</li>-->
+        <!--<li class="list">探索</li>-->
+        <!--<li class="list">社会</li>-->
+        <!--<li class="list">游戏</li>-->
+    </ul>
+</div>
+</body>
+<script src="/assets/index/js/nav.js"></script>
+</html>

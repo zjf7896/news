@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    position: relative;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    /*触碰后高亮默认为透明度0.3的黑色 取消高亮*/
+}
+
+body {
+    font-size: 16px;
+    color: #333;
+}
+/*页头部分*/
+.top{
+    width: 100%;
+    height: 1.6rem;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.top-abs{
+    width: 100%;
+    height: 0.88rem;
+    position: relative;
+    background: #d43d3d;
+    display: flex;
+    justify-content: space-between;
+}
+.top .top-email{
+    width: 1.08rem;
+    height: 0.55rem;
+    z-index: 100;
+    color: #fff;
+    font-size: 0.28rem;
+    background: url(../img/email.png) center no-repeat;
+    background-size: contain;
+    margin: 0.16rem 0 0 0.2rem;
+
+}
+.top .top-title{
+    height: 0.88rem;
+    font-size: 0.4rem;
+    line-height: 0.88rem;
+    color: #fff;
+    overflow: hidden;
+}
+.top-title a{
+    width: 2rem;
+    height: 0.88rem;
+    float: left;
+    background: url(../img/title.png) center no-repeat;
+    background-size: contain;
+    font-size: 0.4rem;
+    line-height: 0.88rem;
+    font-weight: 700;
+    color: #fff;
+}
+.top-title .refresh{
+    width: 0.5rem;
+    height: 0.88rem;
+    background: url(../img/refresh.png)center no-repeat;
+    background-size: 0.32rem;
+    float: right;
+}
+.top .top-search{
+    width: 0.78rem;
+    height: 0.48rem;
+    background: url(../img/search.png) center no-repeat;
+    background-size: contain;
+    margin: 0.2rem 0.2rem 0 0;
+
+}
+/*导航*/
+
+.top-nav{
+    width: 100%;
+    height: 0.72rem;
+    background: #f4f5f6;
+
+}
+.top-nav .nav-title{
+    width: 7.1rem;
+    height: 0.72rem;
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav .nav-title a{
+    height: 0.72rem;
+    padding: 0 0.2rem;
+    line-height: 0.72rem;
+    text-align: center;
+    color: #505050;
+    font-size: 0.34rem;
+}
+.top-nav .nav-title a.active{
+    color: #f85959;
+}
+.top-nav .top-more{
+    width: 1.2rem;
+    height: 0.72rem;
+    background: #f4f5f6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.72rem;
+    line-height: 0.62rem;
+    text-align: center;
+    font-weight: 300;
+    z-index: 80;
+}
+.top-nav .top-more a{
+    z-index: 100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #f85959;
+}
+.primary{
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0.22rem;
+}
+/*列表内容*/
+.list-content{
+    overflow: hidden;
+    margin: 1.6rem 0.3rem auto;
+}
+.list-content .list{
+   width: 100%;
+    overflow: hidden;
+}
+
+.list-content .list a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0.32rem 0;
+}
+
+.list-1st .left{
+    width: 67%;
+    float: left;
+}
+.list-content h3{
+    color: #333;
+    font-size: 0.34rem;
+    margin-right: 0.4rem;
+    font-weight: 400;
+    padding-top: 0.1rem;
+}
+
+.list .corner{
+    padding-top: 0.1rem;
+}
+
+.list-1st .left .corner span{
+    height: 0.24rem;
+    color: #999;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+}
+.list-2nd .corner span{
+    height: 0.24rem;
+    color: #999;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+}
+.list-3rd .corner span{
+    height: 0.24rem;
+    color: #999;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+}
+.list-1st .left .corner span.hot{
+width: 0.48rem;
+    height: 0.24rem;
+    border: 1px solid #f85959;
+    color: #f85959;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+    padding: 0 0.05rem;
+}
+
+.list-2nd .corner span.hot{
+    width: 0.48rem;
+    height: 0.24rem;
+    border: 1px solid #f85959;
+    color: #f85959;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+    padding: 0 0.05rem;
+}
+
+.list-1st .right{
+    width: 32%;
+    height: 1.5rem;
+    float: left;
+}
+.list-1st .right img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.list-3rd .list-box{
+    width: 100%;
+    padding-top: 0.12rem;
+    overflow: hidden;
+    display: flex;
+
+}
+.list-box .list-img{
+    width: 33.3%;
+    height: 1.5rem;
+    padding-right: 0.04rem;
+}
+.list-box .list-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.shop-holder{
+    width: 6.9rem;
+    overflow: hidden;
+}
+.shop-holder a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0.32rem 0;
+}
+.shop-holder h3{
+    color: #333;
+    font-size: 0.34rem;
+    margin-right: 0.4rem;
+    font-weight: 400;
+    padding-top: 0.1rem;
+}
+.shop-holder .shop-img{
+    width: 100%;
+    height: 3.9rem;
+}
+.shop-holder .shop-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.shop-holder .corner{
+    padding-top: 0.1rem;
+}
+.shop-holder .corner span{
+    height: 0.24rem;
+    color: #999;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+}
+.corner span.shops{
+    width: 0.48rem;
+    height: 0.24rem;
+    border: 1px solid #2a90d7;
+    color: #2a90d7;
+    font-size: 0.18rem;
+    margin-right: 0.1rem;
+    padding: 0 0.05rem;
+}
